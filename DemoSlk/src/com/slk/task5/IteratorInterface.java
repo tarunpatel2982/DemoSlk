@@ -90,6 +90,26 @@ public class IteratorInterface {
 		
 		arrayList.iterator().forEachRemaining(System.out::println);
 	}
+	
+	public static void IteratorAllMethod()
+	{
+		System.out.println("===> hashMap Iterator ");
+		HashMap<Integer, String> hashMap= new HashMap<Integer, String>();
+		hashMap.put(1, "A");
+		hashMap.put(2, "b");
+		hashMap.put(3, "c");
+		hashMap.put(4, "d");
+		System.out.println(hashMap);
+		
+		Iterator<Integer> iterator= hashMap.keySet().iterator(); 
+		
+		while (iterator.hasNext()) {
+			Integer integer = (Integer) iterator.next();
+			
+			System.out.println("key "+ integer + " value " + hashMap.get(integer));
+			
+		}
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		IteratorInterface.IteratorInterfaceAllMethod();
