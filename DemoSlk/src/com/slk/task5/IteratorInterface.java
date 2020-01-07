@@ -116,6 +116,7 @@ public class IteratorInterface {
 		IteratorInterface.hashSetIterateExample();
 		IteratorInterface.hashMapKeysIteratorExample();
 		IteratorInterface.forEachRemaniningExample();
+		IteratorInterface.IteratorAllMethod();
 	}
 
 }
