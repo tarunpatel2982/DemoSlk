@@ -10,7 +10,7 @@ public class LinkedHashsetClassExample {
 		System.out.println("------------------------------------LinkedHashsetClassExample-----------------------------------------");
 		
 		LinkedHashSet<String> linkedHashSet = new LinkedHashSet<String>();
-		linkedHashSet.add("A");
+		linkedHashSet.add("j");
 		linkedHashSet.add("C");
 		linkedHashSet.add("D");
 		linkedHashSet.add("E");
@@ -20,12 +20,12 @@ public class LinkedHashsetClassExample {
 		linkedHashSet.add("F");
 		linkedHashSet.add("F");
 		linkedHashSet.add("E");
-		linkedHashSet.add("F");
+		linkedHashSet.add("A");
 		linkedHashSet.add("F");
 		System.out.println("-----------Size-------------------------");
 		
 		//System.out.println(linkedHashSet.equals("C"));
-
+		System.out.println(linkedHashSet);
 		System.out.println("Linked Hashset Size   : " + linkedHashSet.size());
 		
 		
