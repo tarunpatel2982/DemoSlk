@@ -16,11 +16,11 @@ public class MapInterfaceExample {
 				
 			    map.put(1,"Rahul");  
 			    map.put(4,"Jai");  
-			    map.put(2,"r");
+			    map.put(2,"A");
 			    
 			    
 			    
-			   int index =map.get(2).hashCode();
+			   int index =map.get(3).hashCode();
 			   
 			    
 			    System.out.println(index);
