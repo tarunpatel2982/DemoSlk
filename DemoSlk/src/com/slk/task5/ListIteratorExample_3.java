@@ -3,7 +3,7 @@ package com.slk.task5;
 import java.util.ArrayList;
 import java.util.ListIterator;
 
-public class ListIteratorExample {
+public class ListIteratorExample_3 {
 	
 	
 	
@@ -73,7 +73,7 @@ public class ListIteratorExample {
 		// TODO Auto-generated method stub
 
 		
-		ListIteratorExample.ListIteratorAllMethod();
+		ListIteratorExample_3.ListIteratorAllMethod();
 	}
 
 }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ConvertingListToArray {
+public class ConvertingListToArrayExample_15_20 {
 
 	
 	public static void convertListtoArrayofString()

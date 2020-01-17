@@ -3,7 +3,7 @@ package com.slk.task5;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-public class HashTableExample {
+public class HashTableExample_13 {
 
 	public static void hashTableExample()
 	{
@@ -25,7 +25,7 @@ public class HashTableExample {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		HashTableExample.hashTableExample();
+		HashTableExample_13.hashTableExample();
 	}
 
 }

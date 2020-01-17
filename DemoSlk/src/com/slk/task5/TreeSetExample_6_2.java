@@ -2,7 +2,7 @@ package com.slk.task5;
 
 import java.util.TreeSet;
 
-public class TreeSetExample2 {
+public class TreeSetExample_6_2 {
 	
 	
 

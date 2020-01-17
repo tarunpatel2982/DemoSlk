@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 
-public class ArrayListExample {
+public class ArrayListExample_1 {
 
 	
 	public static void arrayListAddRemove()
@@ -174,10 +174,10 @@ public class ArrayListExample {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ArrayListExample.arrayListAddRemove();
-		ArrayListExample.sortData();
-		ArrayListExample.arrayListAddAllRemoveAll();
-		ArrayListExample.convertToArray();
+		ArrayListExample_1.arrayListAddRemove();
+		ArrayListExample_1.sortData();
+		ArrayListExample_1.arrayListAddAllRemoveAll();
+		ArrayListExample_1.convertToArray();
 	}
 
 }

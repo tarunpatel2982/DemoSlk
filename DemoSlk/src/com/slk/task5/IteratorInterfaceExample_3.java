@@ -5,11 +5,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class IteratorInterface {
-	
-	
-	
-	
+public class IteratorInterfaceExample_3 {
 	
 	
 	public static void IteratorInterfaceAllMethod()
@@ -112,11 +108,11 @@ public class IteratorInterface {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		IteratorInterface.IteratorInterfaceAllMethod();
-		IteratorInterface.hashSetIterateExample();
-		IteratorInterface.hashMapKeysIteratorExample();
-		IteratorInterface.forEachRemaniningExample();
-		IteratorInterface.IteratorAllMethod();
+		IteratorInterfaceExample_3.IteratorInterfaceAllMethod();
+		IteratorInterfaceExample_3.hashSetIterateExample();
+		IteratorInterfaceExample_3.hashMapKeysIteratorExample();
+		IteratorInterfaceExample_3.forEachRemaniningExample();
+		IteratorInterfaceExample_3.IteratorAllMethod();
 	}
 
 }

@@ -3,7 +3,7 @@ package com.slk.task5;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
-public class LinkedHashsetClassExample {
+public class LinkedHashsetClassExample_5 {
 
 	public static void allMethod()
 	{
@@ -51,7 +51,7 @@ public class LinkedHashsetClassExample {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		LinkedHashsetClassExample.allMethod();
+		LinkedHashsetClassExample_5.allMethod();
 	}
 
 }

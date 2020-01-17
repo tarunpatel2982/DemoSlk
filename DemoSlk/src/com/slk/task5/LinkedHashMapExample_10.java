@@ -2,7 +2,7 @@ package com.slk.task5;
 
 import java.util.LinkedHashMap;
 
-public class LinkedHashMapExample {
+public class LinkedHashMapExample_10 {
 
 	
 	public static void allMethod()
@@ -28,7 +28,7 @@ public class LinkedHashMapExample {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		LinkedHashMapExample.allMethod();
+		LinkedHashMapExample_10.allMethod();
 	}
 
 }

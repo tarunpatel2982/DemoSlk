@@ -4,11 +4,11 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class FindElementInCollection extends CollectionMethod{
+public class FindElementInCollectionExample_17 extends CollectionMethod{
 	
-	public FindElementInCollection()
+	public FindElementInCollectionExample_17()
 	{
-		System.out.println("hii");
+		//System.out.println("hii");
 		super();
 	}
 	public static void findMaxElementExample()

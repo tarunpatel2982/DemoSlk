@@ -3,7 +3,7 @@ package com.slk.task5;
 import java.util.Iterator;
 import java.util.PriorityQueue;
 
-public class PriorityQueueExample {
+public class PriorityQueueExample_7 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

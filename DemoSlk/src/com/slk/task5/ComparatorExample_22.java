@@ -3,7 +3,7 @@ package com.slk.task5;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class ComparatorExample {
+public class ComparatorExample_22 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

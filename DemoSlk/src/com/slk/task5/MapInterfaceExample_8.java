@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class MapInterfaceExample {
+public class MapInterfaceExample_8 {
 
 	public static void OldStyle()
 	{
@@ -28,14 +28,14 @@ public class MapInterfaceExample {
 			    System.out.println(map);
 			    
 			    
-//			    Set set= map.entrySet();
-//			    Iterator iterator = set.iterator();
-//			    
-//			    while (iterator.hasNext()) {
-//					
-//			    	Map.Entry entry = (Map.Entry)iterator.next();
-//			    	System.out.println(entry.getKey() + "  " + entry.getValue());
-//				}
+			    Set set= map.entrySet();
+			    Iterator iterator = set.iterator();
+			    
+			    while (iterator.hasNext()) {
+					
+			    	Map.Entry entry = (Map.Entry)iterator.next();
+			    	System.out.println(entry.getKey() + "  " + entry.getValue());
+				}
 			    	
 	}
 	
@@ -57,8 +57,8 @@ public class MapInterfaceExample {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MapInterfaceExample.OldStyle();
-		//MapInterfaceExample.NewStyle();
+		MapInterfaceExample_8.OldStyle();
+		MapInterfaceExample_8.NewStyle();
 		
 
 	}

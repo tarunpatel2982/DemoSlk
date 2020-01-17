@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 
-public class SortingInCollection {
+public class SortingInCollectionExample_18 {
 	
 	public static void arraySortingExample()
 	
@@ -58,9 +58,9 @@ public class SortingInCollection {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		SortingInCollection.arraySortingExample();
-		SortingInCollection.objectReverseOrder();
-		SortingInCollection.sortWrappperClassObject();
+		SortingInCollectionExample_18.arraySortingExample();
+		SortingInCollectionExample_18.objectReverseOrder();
+		SortingInCollectionExample_18.sortWrappperClassObject();
 		
 		System.out.println(" =========================Userdefind Class Objects===========================");
 		ArrayList<Student> arrayList = new ArrayList<Student>();

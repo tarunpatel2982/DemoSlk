@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.Set;
 
-public class HashMapExample {
+public class HashMapExample_9 {
 	
 	public static void hashMapPut() {
 		System.out.println("===========================================================================");
@@ -105,9 +105,9 @@ public class HashMapExample {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		HashMapExample.hashMapPut();
-		HashMapExample.IteratorUsed();
-		HashMapExample.collectionAllMEthodExample();
+		HashMapExample_9.hashMapPut();
+		HashMapExample_9.IteratorUsed();
+		HashMapExample_9.collectionAllMEthodExample();
 	}
 
 }

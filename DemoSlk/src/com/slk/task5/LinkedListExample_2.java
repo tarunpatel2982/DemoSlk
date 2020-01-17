@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-public class LinkedListExample {
+public class LinkedListExample_2 {
 
 	
 	public static void addLinkedListValue()
@@ -111,9 +111,9 @@ public class LinkedListExample {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		LinkedListExample.addLinkedListValue();
-		LinkedListExample.linkedListSorting();
-		LinkedListExample.iteratorExample();
+		LinkedListExample_2.addLinkedListValue();
+		LinkedListExample_2.linkedListSorting();
+		LinkedListExample_2.iteratorExample();
 	}
 
 }

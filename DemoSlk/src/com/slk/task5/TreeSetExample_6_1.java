@@ -3,7 +3,7 @@ package com.slk.task5;
 import java.util.Comparator;
 import java.util.TreeSet;
 
-public class TreeSetExample1 {
+public class TreeSetExample_6_1 {
 
 	
 	public static void main(String[] args) {
