@@ -22,7 +22,6 @@ public class ArrayListExample_1 {
 		arrayList.add(null);
 		
 		
-		List<String> fixed = FixedSizeList.
 		//arrayList Allow Duplicate value
 		//Allow Null Value
 		

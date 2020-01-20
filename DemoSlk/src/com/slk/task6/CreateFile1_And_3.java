@@ -3,24 +3,25 @@ package com.slk.task6;
 import java.io.File;
 import java.io.IOException;
 
-public class CreateFile1 {
+public class CreateFile1_And_3 {
 
 	public static void createFileMethod() throws IOException
 	{
-		String pathname= "E://MCA-6//new.txt";
+		String pathname= "/home/SLKTECHLABS/tarun.patel/tarun.txt";
 		File file = new File(pathname);
+	
 		if(file.createNewFile())
 		{
 			System.out.println("File Is Create  : " + file.getName());
 		}
 		else
 		{
-			System.out.println("File Alrady Exist " );
+			System.out.println(	file.getName()   +" File Alrady Exist " );
 		}
 	}
 	public static void setFilePermission() throws IOException
 	{
-		String pathname= "E://MCA-6//new.txt";
+		String pathname= "/home/SLKTECHLABS/tarun.patel/tarun.txt";
 		File file = new File(pathname);
 		boolean exists= file.exists();
 		if(exists == true)
@@ -39,6 +40,9 @@ public class CreateFile1 {
 			System.out.println("File not Found " );
 		}
 	}
+	
+	
+	
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
