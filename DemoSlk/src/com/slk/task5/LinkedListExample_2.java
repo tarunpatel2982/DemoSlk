@@ -18,7 +18,12 @@ public class LinkedListExample_2 {
         linkedList.add("B");
         linkedList.add("C");
         linkedList.add("D");
-         
+        linkedList.add(null);
+        linkedList.add("D");
+        linkedList.add("D");
+        linkedList.add(null);
+        
+        //linked list allow Duplicate value
         System.out.println(linkedList);
         
         System.out.println("Add value in linked list");

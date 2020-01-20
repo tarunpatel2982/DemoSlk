@@ -15,7 +15,8 @@ public class HashTableExample_13 {
 		hashtable.put("1","One");
 		hashtable.put("2","Two");
 		hashtable.put("3","Three");
-		 
+
+		
 		Enumeration e =hashtable.elements();
 		while (e.hasMoreElements()) {
 			System.out.println(e.nextElement());

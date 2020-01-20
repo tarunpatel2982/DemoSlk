@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
 
 public class ArrayListExample_1 {
 
@@ -13,12 +14,22 @@ public class ArrayListExample_1 {
 		ArrayList<String> arrayList = new ArrayList<String>();
 		arrayList.add("tarun");
 		arrayList.add("lalu");
+		arrayList.add("tarun");
 		arrayList.add("jiten");
 		arrayList.add("miten");
 		arrayList.add("ritesh");
 		arrayList.add("jaymin");
+		arrayList.add(null);
+		
+		
+		List<String> fixed = FixedSizeList.
+		//arrayList Allow Duplicate value
+		//Allow Null Value
 		
 		System.out.println( "===>>> Original List === >>");
+		
+		//Array List maintatain  Insertion Order
+						
 		for(String str:arrayList)
 		{
 			System.out.println(str);
