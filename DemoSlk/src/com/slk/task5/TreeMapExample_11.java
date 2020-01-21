@@ -17,8 +17,8 @@ public class TreeMapExample_11 {
 		;
 		
 		System.out.println("column  : " + treeMap.ceilingKey(6) + " : value : " +treeMap.get(6));
-		System.out.println("column  : " + treeMap.ceilingKey(1) + " : value : " +treeMap.get(1));
-		System.out.println("column  : " + treeMap.ceilingKey(2) + " : value : " +treeMap.get(2));
+		System.out.println("column  : " + treeMap.ceilingKey(1) + " : value : " +treeMap.get(2));
+		System.out.println("column  : " + treeMap.ceilingKey(2) + " : value : " +treeMap.get(1));
 		
 		
 		Iterator<Integer> iterator = treeMap.keySet().iterator();

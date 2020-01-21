@@ -12,13 +12,14 @@ public class HashSetClassExample_4 {
 		System.out.println("------------------------------------------------");
 		
 		HashSet<String> hashSet = new HashSet<String>();
-		
+		//hashSet.add(null);
 		hashSet.add("One");
 		hashSet.add("Two");
 		hashSet.add("Three");
 		hashSet.add("Two");
 		hashSet.add("Threee");
 		hashSet.add("Twoe");
+		hashSet.add(null);
 		hashSet.add("Threev");
 		System.out.println("hascode = "+hashSet.hashCode());
 		//System.out.println(hashSet.);

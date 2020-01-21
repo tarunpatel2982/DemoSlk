@@ -2,6 +2,7 @@ package com.slk.task5;
 
 import java.util.Iterator;
 import java.util.LinkedHashSet;
+import java.util.ListIterator;
 
 public class LinkedHashsetClassExample_5 {
 
@@ -10,6 +11,7 @@ public class LinkedHashsetClassExample_5 {
 		System.out.println("------------------------------------LinkedHashsetClassExample-----------------------------------------");
 		
 		LinkedHashSet<String> linkedHashSet = new LinkedHashSet<String>();
+		linkedHashSet.add(null);
 		linkedHashSet.add("j");
 		linkedHashSet.add("C");
 		linkedHashSet.add("D");
@@ -22,6 +24,7 @@ public class LinkedHashsetClassExample_5 {
 		linkedHashSet.add("E");
 		linkedHashSet.add("A");
 		linkedHashSet.add("F");
+		//linkedHashSet.add(null);
 		System.out.println("-----------Size-------------------------");
 		
 		//System.out.println(linkedHashSet.equals("C"));
@@ -34,7 +37,7 @@ public class LinkedHashsetClassExample_5 {
 			String string = (String) iterator.next();
 			System.out.println("Iterator value : " +  string);
 		}
-		
+	
 		System.out.println("value  :   " + linkedHashSet);
 		
 		System.out.println("Remove Element of : " + linkedHashSet.remove("F"));
