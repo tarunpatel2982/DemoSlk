@@ -6,36 +6,35 @@ import java.nio.file.FileSystem;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.attribute.DosFileAttributes;
 
 public class FileHiddenExample {
 
 	
-	public static void makeHiddenFile() throws IOException
+	public static void makeHiddenFile(Path filePath) throws IOException
 	{
-		String pathname= "tarun1.txt";
-		File file = new File(pathname);
-		//file.createNewFile();
-		Path path = FileSystems.getDefault().getPath(pathname);
 		
-		Files.setAttribute(path, "dos:hidden", true);
-		System.out.println(file.getAbsolutePath());
+		System.out.println("Get Path : " + filePath);
 		
 		
-		boolean check = file.isHidden();
-		System.out.println(" test " + file.isHidden());
-		if(check)
-		{
-			System.out.println("File Hidden : " + file);
-		}else
-		{
-			System.out.println("File not Hidden : " + file);
-		}
+		  DosFileAttributes attr = Files.readAttributes(filePath, DosFileAttributes.class);
+		  
+	      System.out.println(filePath.getFileName() + " Hidden attribute is " + attr.isHidden());
+	   
+	      Files.setAttribute(filePath, "dos:hidden", true);
+	  
+	      attr = Files.readAttributes(filePath, DosFileAttributes.class);
+          
+	      System.out.println(filePath.getFileName() + " Hidden attribute is " + attr.isHidden());
 		
 	}
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-
-		makeHiddenFile();
+		Path filePath = Paths.get("/home/SLKTECHLABS/tarun.patel/git/DemoSlk/DemoSlk/new1.txt");
+		 
+		makeHiddenFile(filePath);
 	}
 
 }
+//Anonymous
