@@ -9,6 +9,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.TreeSet;
 
 public class SortingExample14 {
 	
@@ -80,12 +81,34 @@ public class SortingExample14 {
 		System.out.println("After Sorting :" +list);
 		
 	}
-	
+	public static void treeReverse()
+	{
+		TreeSet<String> treeSet = new TreeSet<String>();
+		treeSet.add("k");
+		treeSet.add("u");
+		treeSet.add("b");
+		treeSet.add("n");
+		treeSet.add("a");
+		System.out.println("Tree Set : " + treeSet);
+		
+		
+		Iterator<String> iterator = treeSet.descendingIterator();
+		while (iterator.hasNext()) {
+			String string = (String) iterator.next();
+			System.out.println("Iterator DecendingInterator Used :  " + string);
+			
+		}
+		
+		TreeSet<String> treeSet2 = (TreeSet<String>)treeSet.descendingSet();
+		System.out.println("decending set Method : "+ treeSet2);
+		
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		naturalOrdaringSorting();
-		reversingSortOrder();
+//		naturalOrdaringSorting();
+//		reversingSortOrder();
+		treeReverse();
 	}
 
 }

@@ -20,6 +20,9 @@ public class ArrayListExample_1 {
 		arrayList.add("ritesh");
 		arrayList.add("jaymin");
 		arrayList.add(null);
+		arrayList.add(null);
+		arrayList.add(null);
+		arrayList.add(null);
 		
 		
 		//arrayList Allow Duplicate value

@@ -115,10 +115,14 @@ public class LinkedListExample_2 {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		LinkedListExample_2.addLinkedListValue();
-		LinkedListExample_2.linkedListSorting();
-		LinkedListExample_2.iteratorExample();
+//
+//		LinkedListExample_2.addLinkedListValue();
+//		LinkedListExample_2.linkedListSorting();
+//		LinkedListExample_2.iteratorExample();
+		
+	Integer a = 20;
+	
+	System.out.println(a.hashCode());
 	}
 
 }
