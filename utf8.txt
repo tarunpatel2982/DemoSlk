@@ -1,0 +1,3 @@
+tarunpatel2982.com
+UTF-8 Demo
+क्षेत्रफल = लंबाई * चौड़ाई
