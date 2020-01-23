@@ -12,7 +12,10 @@ public class ArrayListExample_1 {
 	
 	public static void arrayListAddRemove()
 	{
-		ArrayList<String> arrayList = new ArrayList<String>();
+		int i = 1;
+		
+		
+		ArrayList<Object> arrayList = new ArrayList<Object>();
 		arrayList.add("tarun");
 		arrayList.add("lalu");
 		arrayList.add("tarun");
@@ -20,10 +23,11 @@ public class ArrayListExample_1 {
 		arrayList.add("miten");
 		arrayList.add("ritesh");
 		arrayList.add("jaymin");
+		arrayList.add(i);
+		arrayList.add(true);
 		arrayList.add(null);
 		arrayList.add(null);
-		arrayList.add(null);
-		arrayList.add(null);
+		arrayList.add(1, "tarun");
 		
 		
 		//arrayList Allow Duplicate value
@@ -33,7 +37,7 @@ public class ArrayListExample_1 {
 		
 		//Array List maintatain  Insertion Order
 						
-		for(String str:arrayList)
+		for(Object str:arrayList)
 		{
 			System.out.println(str);
 		}
@@ -44,21 +48,21 @@ public class ArrayListExample_1 {
 
 		arrayList.remove("miten");
 		System.out.println("=== >>>Remove for Array list ===>>");
-		for(String str:arrayList)
+		for(Object str:arrayList)
 		{
 			System.out.println(str);
 		}
 		
 		arrayList.add(0, "UV");
 		System.out.println("===>> Add New Object");
-		for(String str:arrayList)
+		for(Object str:arrayList)
 		{
 			System.out.println(str);
 		}
 		
 		arrayList.remove(2);
 		System.out.println("===>>> Remove index wise object");
-		for(String str:arrayList)
+		for(Object str:arrayList)
 		{
 			System.out.println(str);
 		}
@@ -66,7 +70,7 @@ public class ArrayListExample_1 {
 		
 		arrayList.set(0, "Urvesh");
 		System.out.println("===>>> Update Element using set method");
-		for(String str:arrayList)
+		for(Object str:arrayList)
 		{
 			System.out.println(str);
 		}
@@ -74,7 +78,7 @@ public class ArrayListExample_1 {
 		System.out.println("===>>> return index of the object");
 		System.out.println(pos);
 		
-		String st= arrayList.get(0);
+		Object st= arrayList.get(0);
 		System.out.println("===>>> return object of the index");
 		System.out.println(st);
 		
@@ -94,6 +98,7 @@ public class ArrayListExample_1 {
 	}
 	public static void sortData()
 	{
+		System.out.println("======================  Sorted data ===========================================");
 	    ArrayList<Integer> myNumbers = new ArrayList<Integer>();
 	    myNumbers.add(33);
 	    myNumbers.add(15);
@@ -173,6 +178,7 @@ public class ArrayListExample_1 {
         list.add("B");
         list.add("C");
         list.add("D");
+        
          
         //Convert to object array
         Object[] array = list.toArray();
@@ -206,12 +212,14 @@ public class ArrayListExample_1 {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		ArrayListExample_1.arrayListAddRemove();
-//		ArrayListExample_1.sortData();
-//		ArrayListExample_1.arrayListAddAllRemoveAll();
-//		ArrayListExample_1.convertToArray();
+		ArrayListExample_1.arrayListAddRemove();
+		ArrayListExample_1.sortData();
+		ArrayListExample_1.arrayListAddAllRemoveAll();
+		ArrayListExample_1.convertToArray();
 		
 		arrayListInAddHashMap();
 	}
 
 }
+
+

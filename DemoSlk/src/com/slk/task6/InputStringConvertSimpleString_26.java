@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class InputStringConvertSimpleString {
+public class InputStringConvertSimpleString_26 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

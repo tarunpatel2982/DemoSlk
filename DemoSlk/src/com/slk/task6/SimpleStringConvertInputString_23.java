@@ -12,7 +12,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 
-public class SimpleStringConvertInputString {
+public class SimpleStringConvertInputString_23 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub

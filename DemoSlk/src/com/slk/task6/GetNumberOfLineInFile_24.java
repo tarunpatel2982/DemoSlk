@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class CountNumberOfLineInFile {
+public class GetNumberOfLineInFile_24 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub

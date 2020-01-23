@@ -3,7 +3,7 @@ package com.slk.task6;
 import java.io.File;
 import java.io.IOException;
 
-public class GetFilePath {
+public class GetFilePath_15 {
 
 	
 	public static void getAbsuluteFilePath() throws IOException

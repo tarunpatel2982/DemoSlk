@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class IfFileExists {
+public class IfFileExists_17 {
 
 	public static void isFileExistExample() throws IOException
 	{

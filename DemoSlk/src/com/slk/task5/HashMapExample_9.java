@@ -36,7 +36,8 @@ public class HashMapExample_9 {
 		 
 		map.put(1, "A");
 		map.put(2, "B");
-		map.put(3, "C");
+		map.put(3, "C").
+		
 		 
 		System.out.println("//Iterate over keys");
 		

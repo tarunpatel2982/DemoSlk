@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 
-public class ReadUTF_8_EncodedData {
+public class ReadUTF_8_EncodedData_18 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub

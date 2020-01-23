@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
 
 public class FileReadWithBufferedInputStreeam_4 {
 	
@@ -13,6 +14,7 @@ public class FileReadWithBufferedInputStreeam_4 {
 	{
 		File file = new File("/home/SLKTECHLABS/tarun.patel/git/DemoSlk/DemoSlk/new.txt");
 		FileInputStream inputStream = new FileInputStream(file);
+		
 		
 		int a;
 		while ((a= inputStream.read()) !=-1) {

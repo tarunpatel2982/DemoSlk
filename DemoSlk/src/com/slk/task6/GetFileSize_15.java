@@ -2,7 +2,7 @@ package com.slk.task6;
 
 import java.io.File;
 
-public class CheckFileSize {
+public class GetFileSize_15 {
 
 	public static long simleCheckFileSize(String fileName)
 	{

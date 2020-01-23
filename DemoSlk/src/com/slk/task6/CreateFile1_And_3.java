@@ -21,8 +21,9 @@ public class CreateFile1_And_3 {
 	}
 	public static void setFilePermission() throws IOException
 	{
-		String pathname= "/home/SLKTECHLABS/tarun.patel/tarun.txt";
+		String pathname= "/home/SLKTECHLABS/tarun.patel/xyz.txt";
 		File file = new File(pathname);
+		file.createNewFile();
 		boolean exists= file.exists();
 		if(exists == true)
 		{
@@ -46,7 +47,7 @@ public class CreateFile1_And_3 {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		createFileMethod();
+		//createFileMethod();
 		setFilePermission();
 	}
 

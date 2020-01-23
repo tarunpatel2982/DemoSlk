@@ -9,7 +9,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.attribute.DosFileAttributes;
 
-public class FileHiddenExample {
+public class FileHiddenExample_17 {
 
 	
 	public static void makeHiddenFile(Path filePath) throws IOException

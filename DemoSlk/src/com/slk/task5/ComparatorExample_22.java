@@ -8,34 +8,34 @@ public class ComparatorExample_22 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		ArrayList<StudentComparator> studentComparators= new ArrayList<StudentComparator>();
-		studentComparators.add(new StudentComparator(111, "bbbb", "london")); 
-		studentComparators.add(new StudentComparator(131, "aaaa", "nyc")); 
-		studentComparators.add(new StudentComparator(121, "cccc", "jaipur")); 
+		ArrayList<Student2> Student1= new ArrayList<Student2>();
+		Student1.add(new Student2(111, "bbbb", "london")); 
+		Student1.add(new Student2(131, "aaaa", "nyc")); 
+		Student1.add(new Student2(121, "cccc", "jaipur")); 
 		
 		
 		System.out.println("============UnSorted ======================");
 		
-		for(int i=0;i<studentComparators.size();i++)
+		for(int i=0;i<Student1.size();i++)
 		{
-			System.out.println( "  " + studentComparators.get(i));
+			System.out.println( "  " + Student1.get(i));
 		}
 		
-		Collections.sort(studentComparators,new SortByRollNo());
+		Collections.sort(Student1,new SortByRollNo());
 		System.out.println("============Sorted by Roll No ======================");
 		
-		for(int i=0;i<studentComparators.size();i++)
+		for(int i=0;i<Student1.size();i++)
 		{
-			System.out.println( "  " + studentComparators.get(i));
+			System.out.println( "  " + Student1.get(i));
 		}
 		
 		
-		Collections.sort(studentComparators,new SortByName());
+		Collections.sort(Student1,new SortByName());
 		System.out.println("============Sorted by Name ======================");
 		
-		for(int i=0;i<studentComparators.size();i++)
+		for(int i=0;i<Student1.size();i++)
 		{
-			System.out.println( "  " + studentComparators.get(i));
+			System.out.println( "  " + Student1.get(i));
 		}
 	}
 
