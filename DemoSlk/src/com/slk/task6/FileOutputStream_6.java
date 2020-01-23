@@ -6,7 +6,27 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class BufferOutputStream {
+public class FileOutputStream_6 {
+	
+	public static void  fileOutPutStreamExample()
+	{
+		File file = new File("/home/SLKTECHLABS/tarun.patel/git/DemoSlk/DemoSlk/new1.txt");
+		
+		try {
+			FileOutputStream fileOutputStream = new FileOutputStream(file);
+			
+			String j= "Hello Java " ; 
+			byte[] b=j.getBytes();
+			fileOutputStream.write(b);
+			System.out.println("Done : fileOutPutStreamExample()");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 	public static void writeInBuffer() throws FileNotFoundException,IOException
 	{
@@ -38,14 +58,10 @@ public class BufferOutputStream {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		try {
+		fileOutPutStreamExample();
 			writeInBuffer();
-			//fileOutPutStreamWriterClass();
+			fileOutPutStreamWriterClass();
 			witerByte();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 
 }

@@ -3,7 +3,7 @@ package com.slk.task6;
 import java.io.File;
 import java.io.IOException;
 
-public class DeleteFileCertainExtensionOnly {
+public class DeleteFileCertainExtensionOnly_9 {
 
 	public static void cerateFile() throws IOException
 	{

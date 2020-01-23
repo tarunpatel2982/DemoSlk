@@ -103,12 +103,27 @@ public class SortingExample14 {
 		System.out.println("decending set Method : "+ treeSet2);
 		
 	}
-	
+	public static void arrayLitsSort()
+	{
+		System.out.println("---------------------------------------------------------------------------------------------");
+		List<String> list = new ArrayList<String>();
+		list.add("A");
+		list.add("z");
+		list.add("c");
+		list.add("k");
+		list.add("b");
+		System.out.println("Simple : " + list);
+		
+		Collections.sort(list);
+		System.out.println("Natural Sor```````"
+				+ "ting  : " + list);
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		naturalOrdaringSorting();
-//		reversingSortOrder();
+		naturalOrdaringSorting();
+		reversingSortOrder();
 		treeReverse();
+		arrayLitsSort();
 	}
 
 }

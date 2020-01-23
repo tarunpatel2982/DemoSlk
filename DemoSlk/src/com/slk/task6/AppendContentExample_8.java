@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class AppendContentExample {
+public class AppendContentExample_8 {
 
 	public static void appendString(String fileName , String str) throws IOException
 	{

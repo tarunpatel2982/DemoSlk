@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class DeleteFileExample {
+public class DeleteFileExample_8 {
 	public static void deleteFile()
 	{
 		File file = new File("/home/SLKTECHLABS/tarun.patel/git/DemoSlk/DemoSlk/app.txt");

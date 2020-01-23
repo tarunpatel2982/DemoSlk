@@ -6,7 +6,29 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class BufferReaderExample_5 {
+public class FileReadWithBufferReader_5 {
+	
+	public static void fileReaderExample()
+	{
+		File file = new File("/home/SLKTECHLABS/tarun.patel/git/DemoSlk/DemoSlk/new.txt");
+		
+		try {
+			FileReader fileReader = new FileReader(file);
+			
+			System.out.println("...................................File Reader Example ..............................................................");
+			int s ;
+			while ((s = fileReader.read())!= -1) {
+				
+				System.out.print(" " + (char)s);
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	
 	public static void bufferReaderExample() throws IOException
 	{
@@ -57,9 +79,11 @@ public class BufferReaderExample_5 {
 		// TODO Auto-generated method stub
 
 		try {
+			fileReaderExample();
 			bufferReaderExample();
 			readLineMethod();
 			readyMthod();
+			
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

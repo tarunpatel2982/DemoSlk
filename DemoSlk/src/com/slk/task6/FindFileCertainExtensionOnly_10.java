@@ -2,7 +2,7 @@ package com.slk.task6;
 
 import java.io.File;
 
-public class FindFileCertainExtensionOnly {
+public class FindFileCertainExtensionOnly_10 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

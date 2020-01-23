@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class RenameFile {
+public class RenameFile_11_12 {
 
 	public static void renameFileExample() throws IOException
 	{

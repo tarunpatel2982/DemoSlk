@@ -3,6 +3,7 @@ package com.slk.task5;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
@@ -185,12 +186,32 @@ public class ArrayListExample_1 {
             System.out.println(s);
         }
 	}
+	
+	public static void arrayListInAddHashMap()
+	{
+		ArrayList<String> arrayList = new ArrayList<String>();
+			arrayList.add("tarun");
+			arrayList.add("Ten");
+			arrayList.add("Rohit");
+			
+			System.out.println("Test 1 : " + arrayList);
+			
+			HashMap<String,Integer> hashMap = new HashMap<>();
+			hashMap.put("mohan",4);
+			hashMap.put("jitesh",6);
+			hashMap.put("AJ",1);
+			
+			arrayList.addAll(hashMap.keySet());
+			System.out.println("Test 2 : " + arrayList);
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ArrayListExample_1.arrayListAddRemove();
-		ArrayListExample_1.sortData();
-		ArrayListExample_1.arrayListAddAllRemoveAll();
-		ArrayListExample_1.convertToArray();
+//		ArrayListExample_1.arrayListAddRemove();
+//		ArrayListExample_1.sortData();
+//		ArrayListExample_1.arrayListAddAllRemoveAll();
+//		ArrayListExample_1.convertToArray();
+		
+		arrayListInAddHashMap();
 	}
 
 }
