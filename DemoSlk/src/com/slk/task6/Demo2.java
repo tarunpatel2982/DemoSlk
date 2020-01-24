@@ -2,6 +2,7 @@ package com.slk.task6;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
@@ -31,7 +32,7 @@ public class Demo2 {
 			int l;
 			while ((l= fileInputStream.read(buff))>0) {
 				
-				System.out.println("Test Reader : " + (char)l);
+				System.out.println("Test Reader : " +(char)l);
 				
 				fileOutputStream.write(buff, 0, l);
 				
@@ -39,7 +40,12 @@ public class Demo2 {
 			
 			
 			
-		} catch (IOException e) {
+		} 
+		catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -71,8 +77,10 @@ public class Demo2 {
 			System.out.println("File name : " + string);
 		}
 		
-		for(int j=0;j<val;j++)
+		for(int j=0;j<val-1;j++)
 		{
+			System.out.println("test pass file : "+fileName[j]+  "    "+ fileName[j+1]
+					);
 			copyFile(fileName[j],fileName[j+1]);
 		}
 		

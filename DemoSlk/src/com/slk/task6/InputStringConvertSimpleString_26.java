@@ -25,7 +25,7 @@ public class InputStringConvertSimpleString_26 {
 				
 			}
 			
-			System.out.println("conver string  : " + stringBuffer.toString());
+			System.out.println("conver string  : " + stringBuffer);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

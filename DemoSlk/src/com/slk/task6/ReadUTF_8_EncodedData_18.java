@@ -17,6 +17,7 @@ public class ReadUTF_8_EncodedData_18 {
 		
 		 BufferedReader in = new BufferedReader( new InputStreamReader(new FileInputStream(fileDir), "UTF8"));
 		   
+		 System.out.println(in);
 		         String str;
 		   
 		         while ((str = in.readLine()) != null) {
@@ -24,6 +25,14 @@ public class ReadUTF_8_EncodedData_18 {
 		         }
 		   
 		                 in.close();
+		                 
+		                 
+//		                 java.util.Locale हिन्दी = new java.util.Locale("hi", "IN");
+//		                 int लंबाई = 20;
+//		                 int चौड़ाई = 10;
+//		                 int क्षेत्रफल;
+//		                 			क्षेत्रफल = लंबाई * चौड़ाई;
+//		                 System.out.printf(हिन्दी, " क्षेत्रफल  :     %d", क्षेत्रफल);
 	}
 
 }
