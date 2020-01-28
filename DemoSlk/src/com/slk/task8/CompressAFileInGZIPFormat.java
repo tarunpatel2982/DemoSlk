@@ -22,38 +22,11 @@ public class CompressAFileInGZIPFormat {
 		gZipFile();
 		
 		
-//		deCompressGZIPFile();
+		deCompressGZIPFile();
 		
 	}
 	
-	public static void deCompressGZIPFile()
-	{
-		try {
-			FileInputStream fileInputStream = new FileInputStream("uv.txt.gzip");
-			
-			GZIPInputStream gzipInputStream = new GZIPInputStream(fileInputStream);
-			
-			FileOutputStream fileOutputStream = new FileOutputStream("tar.txt");
-			byte [] buffer = new byte[1024];
-			int len;
-			while ((len = gzipInputStream.read(buffer))!=-1) {
-				
-				fileOutputStream.write(buffer,0,len);
-				
-			}
-			
-			fileOutputStream.close();
-			gzipInputStream.close();
-			fileInputStream.close();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-	}
+	
 	public static void gZipFile( )
 	{
 		byte[] b = new byte[1024];
@@ -61,7 +34,7 @@ public class CompressAFileInGZIPFormat {
 			
 			FileInputStream fileInputStream = new FileInputStream("/home/SLKTECHLABS/tarun.patel/git/DemoSlk/DemoSlk/uv.txt");
 			
-			FileOutputStream fileOutputStream = new FileOutputStream("/home/SLKTECHLABS/tarun.patel/git/DemoSlk/uv.gzip");
+			FileOutputStream fileOutputStream = new FileOutputStream("/home/SLKTECHLABS/tarun.patel/git/DemoSlk/uv.gz");
 			GZIPOutputStream gzipOutputStream = new GZIPOutputStream(fileOutputStream);
 			
 			
@@ -88,6 +61,39 @@ public class CompressAFileInGZIPFormat {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	
+	
+	public static void deCompressGZIPFile()
+	{
+		try {
+			FileInputStream fileInputStream = new FileInputStream("/home/SLKTECHLABS/tarun.patel/git/DemoSlk/uv.gz");
+			
+			GZIPInputStream gzipInputStream = new GZIPInputStream(fileInputStream);
+			
+			FileOutputStream fileOutputStream = new FileOutputStream("ungzip.txt");
+			byte [] buffer = new byte[1024];
+			int len;
+			while ((len = gzipInputStream.read(buffer))!=-1) {
+				
+				fileOutputStream.write(buffer,0,len);
+				
+			}
+			
+			fileOutputStream.close();
+			gzipInputStream.close();
+			fileInputStream.close();
+			
+			System.out.println("File UnCompressed -------------------------------------");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
 }

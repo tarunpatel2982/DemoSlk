@@ -78,17 +78,10 @@ public class FileReadWithBufferReader_5 {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		try {
-			fileReaderExample();
-			bufferReaderExample();
-			readLineMethod();
-			readyMthod();
-			
-			
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}	
+		fileReaderExample();
+//			bufferReaderExample();
+//			readLineMethod();
+//			readyMthod();	
 	}
 
 }
