@@ -31,9 +31,14 @@ public class FileHiddenExample_17 {
 	}
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		Path filePath = Paths.get("/home/SLKTECHLABS/tarun.patel/git/DemoSlk/DemoSlk/new1.txt");
+		Path filePath = Paths.get("C:\\Users\\TarunPatel\\git\\DemoSlk\\DemoSlk\\");
 		 
 		makeHiddenFile(filePath);
+	
+		File file = new File("user.dir");
+		
+		System.out.println("check :" +file.getAbsolutePath());
+		
 	}
 
 }
