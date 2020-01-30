@@ -1,5 +1,7 @@
 package com.slk.task1_1;
 
+import com.slk.task13.Table2;
+
 public class SynchronizedBlockUsingAnnonymous {
 
 	public static void main(String[] args) {

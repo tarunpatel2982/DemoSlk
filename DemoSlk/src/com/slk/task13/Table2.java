@@ -1,4 +1,4 @@
-package com.slk.task1_1;
+package com.slk.task13;
 
 public class Table2 {
 

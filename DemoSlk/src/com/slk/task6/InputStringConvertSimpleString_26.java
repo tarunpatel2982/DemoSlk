@@ -13,6 +13,7 @@ public class InputStringConvertSimpleString_26 {
 		// TODO Auto-generated method stub
 
 		try {
+			
 			InputStream inputStream = new FileInputStream("/home/SLKTECHLABS/tarun.patel/git/DemoSlk/DemoSlk/bFile.txt");
 			
 			InputStreamReader inputStreamReader = new InputStreamReader(inputStream);

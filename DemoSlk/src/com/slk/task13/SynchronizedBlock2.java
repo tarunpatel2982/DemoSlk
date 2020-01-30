@@ -1,4 +1,4 @@
-package com.slk.task1_1;
+package com.slk.task13;
 
 public class SynchronizedBlock2 extends Thread{
 	Table2 t;
