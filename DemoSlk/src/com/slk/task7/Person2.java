@@ -34,11 +34,11 @@ public class Person2 implements Serializable{
 		this.personAge = personAge;
 	}
 
-	@Override
-	public String toString() {
-		return "Person2 [personName=" + personName + ", personAge=" + personAge + "]";
-	}
-	
+//	@Override
+//	public String toString() {
+//		return "Person2 [personName=" + personName + ", personAge=" + personAge + "]";
+//	}
+//	
 
 	
 }

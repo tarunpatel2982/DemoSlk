@@ -1,6 +1,5 @@
 package com.slk.task8;
 
-import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -16,22 +15,22 @@ public class FileCompressExample_1 {
 		try {
 			 
 			//DeflaterOutputStream
-			File file = new File("Deflater.java");
-			file.createNewFile();
-			FileInputStream readData = new FileInputStream(file);
+//			File file = new File("Deflater.java");
+//			file.createNewFile();
+			FileInputStream readData = new FileInputStream("Deflater.java");
 			
-			FileOutputStream writeData= new FileOutputStream("def.txt");
+			FileOutputStream writeData= new FileOutputStream("l.txt");
 			
 			DeflaterOutputStream compresser = new DeflaterOutputStream(writeData);
 			 
 			 
 			int i;
 			while ((i=readData.read())!=-1) {
-				writeData.write((byte)i);
-				writeData.flush();
+				compresser.write((byte)i);
+				compresser.flush();
 			}
 			readData.close();
-			writeData.close();
+			compresser.close();
 			System.out.println("Sucess");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -47,35 +46,41 @@ public class FileCompressExample_1 {
 	{
 		
 		try {
-//			File filetext = new File();
-//			filetext.createNewFile();
-			FileInputStream readData = new FileInputStream("inf.txt");
 			
-//			File file = new File();
-//			file.createNewFile();
-			FileOutputStream writeData = new FileOutputStream("Inflater.java");
+			FileInputStream readData = new FileInputStream("l.txt");
+			
+			
 			InflaterInputStream deCompresser = new InflaterInputStream(readData);
+			File file = new File("demo.java");
+			//file.createNewFile();
+			FileOutputStream writeData = new FileOutputStream(file);
 			
+
+			int j ;
 			
-			int i ; 
-			while ((i=deCompresser.read())!=-1) {
-				writeData.write((byte)i);
-				System.out.println(" test  : " + (byte)i);
+			while ((j=deCompresser.read())!=-1) {
+			
+				
+				writeData.write((byte)j);
+				
 				writeData.flush();
 			}
-			readData.close();
-			writeData.close();	
+			
+			//readData.close();
+			writeData.close();
 			deCompresser.close();
 			
+			System.out.println("Done");
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			//System.out.println("Check " + e);
 		}
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	//	fileCompressDefletar();
+//		fileCompressDefletar();
 		fileCompressInflater();
 	}
 

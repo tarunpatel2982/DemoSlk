@@ -39,6 +39,7 @@ public class StaticSyncronizationBlockExample {
 					}
 				};
 				thread1.start();
+			
 	}
 
 }

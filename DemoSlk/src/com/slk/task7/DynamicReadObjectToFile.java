@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class DynamicReadObjectToFile {
 
@@ -14,7 +15,16 @@ public class DynamicReadObjectToFile {
 		DynamicReadObjectToFile dynamicReadObjectToFile = new DynamicReadObjectToFile();
 		ArrayList<Person2> person2 = dynamicReadObjectToFile.deserlizePerson("uv.txt");
 		
-		System.out.println("Person Name : " + person2);
+		//System.out.println("Person Name : " + person2);
+		
+		
+		Iterator<Person2> p = person2.iterator();
+		
+		while (p.hasNext()) {
+			Person2 person22 = (Person2) p.next();
+			System.out.println(person22.getPersonName());
+			System.out.println(person22.getPersonAge());
+		}
 		
 	}
 

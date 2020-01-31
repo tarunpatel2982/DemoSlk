@@ -1,4 +1,4 @@
-class Deflter 
+class Deflater 
 {
 	System.out.println("Sucess");
 }

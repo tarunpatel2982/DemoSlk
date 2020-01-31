@@ -1,4 +1,0 @@
-class Inflater
-{
-	System.out.println("Inflater1");
-}

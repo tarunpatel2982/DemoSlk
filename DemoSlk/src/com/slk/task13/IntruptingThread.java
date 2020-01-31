@@ -18,17 +18,20 @@ public class IntruptingThread extends Thread{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		IntruptingThread intruptingThread = new IntruptingThread();
-		intruptingThread.start();
+		IntruptingThread intruptingThread0 = new IntruptingThread();
+		IntruptingThread intruptingThread1 = new IntruptingThread();
+		intruptingThread0.start();
+		intruptingThread1.start();
 		
+		System.out.println("Check Intrupt : " + intruptingThread0.isInterrupted());
+		System.out.println("Check Intrupt : " + intruptingThread1.isInterrupted());
+		intruptingThread0.interrupt();
 		
-		try
-		{
-			intruptingThread.interrupt();
-		}catch (Exception e) {
-			// TODO: handle exception
-			System.out.println("Exception Handlaed");
-		}
+		System.out.println("Check Intrupt : " + intruptingThread0.isInterrupted());
+		System.out.println("Check Intrupt : " + intruptingThread1.isInterrupted());
+		
+
+		
 
 	}
 
