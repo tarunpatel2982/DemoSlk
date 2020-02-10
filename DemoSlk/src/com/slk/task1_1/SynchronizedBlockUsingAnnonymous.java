@@ -1,6 +1,6 @@
 package com.slk.task1_1;
 
-import com.slk.task13.Table2;
+import com.slk.task13.Synchronization.Table2;
 
 public class SynchronizedBlockUsingAnnonymous {
 
