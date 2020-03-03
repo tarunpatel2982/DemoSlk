@@ -17,7 +17,8 @@ public class Demo {
 		System.out.print("Counter One Enter people Name : ");
 		vaString1 = sc.next();
 		array1.add(vaString1);
-		System.out.println("First Counter Give Ticket   : " + array1);
+		System.out.println("..................==>> "
+				+ "First Counter Give Ticket   : " + array1);
 		counter1--;
 		return counter1;
 	}
@@ -26,7 +27,8 @@ public class Demo {
 		System.out.print("Counter Two  Enter people Name : ");
 		 vaString1 = sc.next();
 		array2.add(vaString1);
-		System.out.println("test 2: " + array2);
+		System.out.println(".................==>> "
+				+ "Second Counter Give Ticket   : " + array2);
 		counter2--;
 		return counter2;
 	}
@@ -35,7 +37,8 @@ public class Demo {
 		System.out.print("Counter Three Enter people Name : ");
 		 vaString1 = sc.next();
 		array3.add(vaString1);
-		System.out.println("test 3 : " + array3);
+		System.out.println(".................==>> "
+				+ "Third Counter Give Ticket   : " + array3);
 		counter3--;
 		return counter3;
 	}
@@ -44,7 +47,8 @@ public class Demo {
 		System.out.print("Counter Four Enter people Name : ");
 		vaString1 = sc.next();
 		array4.add(vaString1);
-		System.out.println("test 4 : " + array4);
+		System.out.println("...................==>> "
+				+ "Fourth Counter Give Ticket   : " + array4);
 		counter4--;
 		return counter4;
 	}
@@ -76,7 +80,7 @@ public class Demo {
 		
 		
 		
-		for (int j = 0; j < total; j++) 
+		for (int j = 0; j <= total/4; j++) 
 		{
 			
 					if(counter1 != 0)
@@ -92,25 +96,27 @@ public class Demo {
 									System.out.println("count 2 ");
 									counter1 = counter2 /2;
 									counter2 -=counter1;
-									counter1 = addCounter1(counter1,array1);
 									System.out.println("test Counter One Check : " + counter1 + " test   :" + counter2);
+									counter1 = addCounter1(counter1,array1);
+									
 								}
 								else if( counter3>counter2 && counter3>counter4 && counter3>=4)
 								{
 									System.out.println("count 3");
 									counter1 = counter3 /2;
 									counter3 -=counter1;
-									counter1 = addCounter1(counter1,array1);
-									System.out.println("test Counter One Check : " + counter1+ " test   :" + counter3 );
 									
+									System.out.println("test Counter One Check : " + counter1+ " test   :" + counter3 );
+									counter1 = addCounter1(counter1,array1);
 								}
 								else if( counter4>counter2 && counter4>counter3 && counter4>=4)
 								{
 									System.out.println("count 4");
 									counter1 = counter4 /2;
 									counter4 -=counter1;
-									counter1 = addCounter1(counter1,array1);
+									
 									System.out.println("test Counter One Check : " + counter1 + " test   :" + counter4);
+									counter1 = addCounter1(counter1,array1);
 								}
 							
 					}
@@ -128,26 +134,27 @@ public class Demo {
 										
 										counter2 = counter1 /2;
 										counter1 -=counter2;
-										counter2 = addCounter2(counter2,array2);
+										
 										System.out.println("test Counter 2 Check : " + counter2+ " test   :" + counter1 );
+										counter2 = addCounter2(counter2,array2);
 									}
 							else if(counter3>counter1 &&  counter3>counter4 && counter3>=4)
 							{
 								System.out.println("count 3");
 								counter2 = counter3 /2;
 								counter3 -=counter2;
-								counter2 = addCounter2(counter2,array2);
-								System.out.println("test Counter 2 Check : " + counter2 + " test   :" + counter3);
 								
+								System.out.println("test Counter 2 Check : " + counter2 + " test   :" + counter3);
+								counter2 = addCounter2(counter2,array2);
 							}
 							else if(counter4>counter1 && counter4>counter3 && counter4>=4)
 							{
 								System.out.println("count 4");
 								counter2 = counter4 /2;
 								counter4 -=counter2;
-								counter2 = addCounter2(counter2,array2);
-								System.out.println("test Counter 2 Check : " + counter2 + " test   :" + counter4);
 								
+								System.out.println("test Counter 2 Check : " + counter2 + " test   :" + counter4);
+								counter2 = addCounter2(counter2,array2);
 							}
 							
 					
@@ -164,16 +171,18 @@ public class Demo {
 								System.out.println("count 2 ");
 								counter3 = counter1 /2;
 								counter1 -=counter3;
-								counter3 = addCounter3(counter3,array3);
+								
 								System.out.println("test Counter 3 Check : " + counter3 );
+								counter3 = addCounter3(counter3,array3);
 							}
 							else if(counter2>counter1 &&  counter2>counter4 && counter2>=4)
 							{
 								System.out.println("count 3");
 								counter3 = counter2 /2;
 								counter2 -=counter3;
-								counter3 = addCounter3(counter3,array3);
+								
 								System.out.println("test Counter 3 Check : " + counter3 );
+								counter3 = addCounter3(counter3,array3);
 								
 							}
 							else if(counter4>counter1 && counter4>counter2  && counter4>=4)
@@ -181,8 +190,9 @@ public class Demo {
 								System.out.println("count 4");
 								counter3 = counter4 /2;
 								counter4 -=counter3;
-								counter3 = addCounter3(counter3,array3);
+								
 								System.out.println("test Counter 3 Check : " + counter3 );
+								counter3 = addCounter3(counter3,array3);
 								
 							}
 						
@@ -200,16 +210,18 @@ public class Demo {
 								System.out.println("count 2 ");
 								counter4 = counter1 /2;
 								counter1 -=counter4;
-								counter4 = addCounter4(counter4,array4);
+								
 								System.out.println("test Counter 4 Check : " + counter4 );
+								counter4 = addCounter4(counter4,array4);
 							}
 							else if(counter2>counter1 && counter2>counter3  && counter2>=4)
 							{
 								System.out.println("count 3");
 								counter4 = counter2 /2;
 								counter2 -=counter4;
-								counter4 = addCounter4(counter4,array4);
+								
 								System.out.println("test Counter 4 Check : " + counter4 );
+								counter4 = addCounter4(counter4,array4);
 								
 							}
 							else if(counter3>counter1 && counter3>counter2 && counter3 >=4)
@@ -217,13 +229,16 @@ public class Demo {
 								System.out.println("count 4");
 								counter4 = counter3 /2;
 								counter3 -=counter4;
-								counter4 = addCounter4(counter4,array4);
+								
 								System.out.println("test Counter 4 Check : " + counter4 );
+								counter4 = addCounter4(counter4,array4);
 								
 							}
 						
 				
 					}
+					
+				System.out.println("-----------------------------------------------------------------------------");
 			
 		}
 		
