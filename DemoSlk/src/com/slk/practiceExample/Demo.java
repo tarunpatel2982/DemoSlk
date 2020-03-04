@@ -54,7 +54,6 @@ public class Demo {
 	}
 	
 	
-	
 	public static void main(String[] args) 
 	{
 		
@@ -93,7 +92,7 @@ public class Demo {
 							
 						{
 						
-									if ( counter2>counter3 && counter2>counter4 && counter2>=4 )
+									if ( counter2>counter3 && counter2>counter4  )
 									{
 										System.out.println("count 2 ");
 										counter1 = counter2 /2;
@@ -102,7 +101,7 @@ public class Demo {
 										counter1 = addCounter1(counter1,array1);
 										
 									}
-									else if( counter3>counter2 && counter3>counter4 && counter3>=4)
+									else if( counter3>counter2 && counter3>counter4 )
 									{
 										System.out.println("count 3");
 										counter1 = counter3 /2;
@@ -111,7 +110,7 @@ public class Demo {
 										System.out.println("test Counter One Check : " + counter1+ " test   :" + counter3 );
 										counter1 = addCounter1(counter1,array1);
 									}
-									else if( counter4>counter2 && counter4>counter3 && counter4>=4)
+									else if( counter4>counter2 && counter4>counter3 )
 									{
 										System.out.println("count 4");
 										counter1 = counter4 /2;
@@ -130,7 +129,7 @@ public class Demo {
 						}else
 						{
 							
-								if( counter1>counter3 && counter1>counter4 && counter1>=4)
+								if( counter1>counter3 && counter1>counter4 )
 										{
 											System.out.println("count 1");
 											
@@ -140,7 +139,7 @@ public class Demo {
 											System.out.println("test Counter 2 Check : " + counter2+ " test   :" + counter1 );
 											counter2 = addCounter2(counter2,array2);
 										}
-								else if(counter3>counter1 &&  counter3>counter4 && counter3>=4)
+								else if(counter3>counter1 &&  counter3>counter4 )
 								{
 									System.out.println("count 3");
 									counter2 = counter3 /2;
@@ -149,7 +148,7 @@ public class Demo {
 									System.out.println("test Counter 2 Check : " + counter2 + " test   :" + counter3);
 									counter2 = addCounter2(counter2,array2);
 								}
-								else if(counter4>counter1 && counter4>counter3 && counter4>=4)
+								else if(counter4>counter1 && counter4>counter3 )
 								{
 									System.out.println("count 4");
 									counter2 = counter4 /2;
@@ -168,7 +167,7 @@ public class Demo {
 						}
 						else
 						{
-								if (counter1>counter2 &&  counter1>counter4 && counter1>=4)
+								if (counter1>counter2 &&  counter1>counter4 )
 								{
 									System.out.println("count 2 ");
 									counter3 = counter1 /2;
@@ -177,7 +176,7 @@ public class Demo {
 									System.out.println("test Counter 3 Check : " + counter3 );
 									counter3 = addCounter3(counter3,array3);
 								}
-								else if(counter2>counter1 &&  counter2>counter4 && counter2>=4)
+								else if(counter2>counter1 &&  counter2>counter4 )
 								{
 									System.out.println("count 3");
 									counter3 = counter2 /2;
@@ -187,7 +186,7 @@ public class Demo {
 									counter3 = addCounter3(counter3,array3);
 									
 								}
-								else if(counter4>counter1 && counter4>counter2  && counter4>=4)
+								else if(counter4>counter1 && counter4>counter2 )
 								{
 									System.out.println("count 4");
 									counter3 = counter4 /2;
@@ -196,6 +195,10 @@ public class Demo {
 									System.out.println("test Counter 3 Check : " + counter3 );
 									counter3 = addCounter3(counter3,array3);
 									
+								}
+								else
+								{
+									System.out.println("ex");
 								}
 							
 						}
@@ -207,7 +210,7 @@ public class Demo {
 						{
 						
 					
-								if (counter1>counter2 && counter1>counter3  && counter1>=4)
+								if (counter1>counter2 && counter1>counter3  )
 								{
 									System.out.println("count 2 ");
 									counter4 = counter1 /2;
@@ -216,7 +219,8 @@ public class Demo {
 									System.out.println("test Counter 4 Check : " + counter4 );
 									counter4 = addCounter4(counter4,array4);
 								}
-								else if(counter2>counter1 && counter2>counter3  && counter2>=4)
+								else if(counter2>counter1 && counter2>counter3  )
+				
 								{
 									System.out.println("count 3");
 									counter4 = counter2 /2;
@@ -226,7 +230,7 @@ public class Demo {
 									counter4 = addCounter4(counter4,array4);
 									
 								}
-								else if(counter3>counter1 && counter3>counter2 && counter3 >=4)
+								else if(counter3>counter1 && counter3>counter2 )
 								{
 									System.out.println("count 4");
 									counter4 = counter3 /2;
